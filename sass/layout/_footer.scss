@@ -1,0 +1,135 @@
+.footer {
+  background-color: var(--dark-bcg-color);
+  text-align: center;
+}
+
+.address-link {
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.auth-nav-link {
+  display: block;
+}
+
+.footer .auth-nav-link {
+  display: block;
+
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.footer-left-side {
+  margin-bottom: 60px;
+}
+
+.footer-title {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+
+  margin-bottom: 20px;
+}
+
+.footer-form-input {
+  width: 100%;
+  height: 50px;
+
+  margin-bottom: 20px;
+
+  padding-left: 16px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+
+  background-color: inherit;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-left-side {
+    flex-direction: column;
+    padding-right: 15px;
+  }
+
+  .footer-thumb {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  .footer-form-input {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .footer-thumb {
+    align-items: baseline;
+  }
+
+  .footer-left-side {
+    margin-right: 70px;
+    margin-bottom: 0;
+    text-align: start;
+  }
+
+  .footer-title {
+    text-align: start;
+  }
+
+  .footer .address {
+    margin-bottom: 0;
+  }
+
+  .address-link {
+    margin-bottom: 9px;
+  }
+
+  .footer .auth-nav-link:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  .form-label {
+    display: flex;
+  }
+
+  .footer-form-input {
+    width: 358px;
+    margin-right: 12px;
+  }
+}

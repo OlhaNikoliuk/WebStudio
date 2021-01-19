@@ -1,0 +1,114 @@
+.advantages-list-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.icon-thumb {
+  height: 120px;
+
+  margin-bottom: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--light-bcg-color);
+  border-radius: 4px;
+}
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.advantages-desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+
+  color: var(--desc-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+
+  .advantages-list-item {
+    width: calc(100% / 2 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+
+  .advantages-list-item:not(:last-child) {
+    margin-bottom: 0px;
+  }
+
+  .advantages-title {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .advantages-list-item {
+    max-width: 270px;
+  }
+}
+
+// .icon-thumb {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+
+//   width: 270px;
+//   height: 120px;
+//   background-color: var(--light-bcg-color);
+//   border-radius: 4px;
+
+//   margin-bottom: 30px;
+// }
+
+// .advantages-icon {
+//   display: block;
+// }
+
+// .advantages-title {
+//   font-weight: 700;
+//   font-size: 14px;
+//   line-height: 1.143;
+//   letter-spacing: 0.03em;
+//   text-transform: uppercase;
+
+//   margin-bottom: 10px;
+// }
+
+// .about .advantages-list {
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+// .advantages-list-item {
+//   width: 270px;
+// }
+
+// .advantages-desc {
+//   font-weight: 400;
+//   font-size: 14px;
+//   line-height: 1.715;
+//   letter-spacing: 0.03em;
+//   color: var(--desc-text-color);
+// }
